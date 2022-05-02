@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    
+    <script>
+        const trainee={
+            fname:"praveen",
+            lname:"hedge",
+            fullname:function(){
+                return this.fname+this.lname;
+            }
+        }
+        const trainee1={
+            fname:"shivam",
+            lname:"gaur"
+        }
+        let fullname=trainee.fullname.bind(trainee1);
+        document.getElementById("demo").innerHTML=trainee.fullname.call(trainee1)+" //it is taken as parameter";
+        document.getElementById("demo1").innerHTML=trainee.fullname.apply(trainee1)+" //it is taken as array";
+        document.getElementById("demo2").innerHTML=fullname();
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="func"></p>
+    <p id="func1"></p>
+    <p id="func2"></p>
+    
+    <script>
+        function fun(arg2,arg){
+            return (arg+arg2)    
+        }
+        function func1(arg2,arg){
+            return Math.max(arg2,arg)
+        }
+        var l=0
+        for(l=1;l<=20;l++){
+            if (l%3===0){
+               document.write(l+"<br>")
+            }
+        }
+        for (let index = 0; index < 10; index++) {
+           document.write(index);
+            
+        }
+    document.getElementById("func").innerHTML=fun(10,20);
+    document.getElementById("func1").innerHTML=func1(10,20);
+    document.getElementById("func2").innerHTML=t;
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="Display"></p>
+    <p id="Display1"></p>
+    <p id="Display2"></p>
+    <p id="Display3"></p>
+    <p id="Display4"></p>
+    <p id="Display5"></p>
+    <p id="Display6"></p>
+    <p id="Display7"></p>
+    <p id="Display8"></p>
+    <p id="Display9"></p>
+
+    <script>
+        let number=190;
+        let number1=Number.MAX_SAFE_INTEGER;
+        let number2=Number.MAX_VALUE;
+        document.getElementById("Display").innerHTML=number.toString()+"<br>"+(190).toString();
+        document.getElementById("Display1").innerHTML=number.toExponential(2);
+        document.getElementById("Display2").innerHTML=number.toPrecision(4);
+        document.getElementById("Display3").innerHTML=number.toFixed(4);
+        document.getElementById("Display4").innerHTML=number.valueOf();
+        document.getElementById("Display5").innerHTML=Number(true)+"<hr>"+Number(false)
+        document.getElementById("Display6").innerHTML=parseFloat(10.999)+"<hr>"+parseFloat(10);
+        document.getElementById("Display7").innerHTML=parseInt(10.999)+"<hr>"+parseInt(10);
+        document.getElementById("Display8").innerHTML=number1;
+        document.getElementById("Display9").innerHTML=number2;
+        
+        </script>
+</body>
+</html>

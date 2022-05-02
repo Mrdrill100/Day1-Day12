@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+    <div class="alert alert-secondary" role="alert"  style="background-color: rgb(241, 253, 173);">
+   <p id="dispdate"></p></div>
+   <div class="alert alert-secondary" role="alert"  style="background-color: rgb(241, 253, 173);">
+   <p id="dispdate1"></p> </div>
+   <div class="alert alert-secondary" role="alert"  style="background-color: rgb(241, 253, 173);">
+   <p id="dispdate2"></p></div>
+   <div class="alert alert-secondary" role="alert"  style="background-color: rgb(241, 253, 173);">
+
+   <p id="dispdate3"></p></div>
+   <div class="alert alert-secondary" role="alert"  style="background-color: rgb(241, 253, 173);">
+   <p id="dispdate4"></p></div>
+   <div class="alert alert-secondary" role="alert"  style="background-color: rgb(241, 253, 173);">
+   <p id="dispdate5"></p></div>
+    
+   <script>
+       let date1=new Date();
+       let date2=new Date(000000000000);
+       document.getElementById("dispdate").innerHTML=date1.setYear(4098);
+       document.getElementById("dispdate1").innerHTML=date1.getHours();
+       document.getElementById("dispdate2").innerHTML=date1.getMonth();
+       document.getElementById("dispdate3").innerHTML=date1.getTimezoneOffset();
+       document.getElementById("dispdate4").innerHTML=date1.setUTCMinutes(3000);
+       document.getElementById("dispdate5").innerHTML=date2;
+   </script>
+   </div> 
+</body>
+</html>

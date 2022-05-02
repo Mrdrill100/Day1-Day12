@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<button type="button" onclick="INDIAN()">INR SALARY DETAILS</button>
+<button type="button" onclick="AMERICAN()">SALARY DETAILS</button>
+<button type="button" onclick="RUSSIAN()">SALARY DETAILS</button>
+
+<body>
+    <table id="inr" style="display: none;">     
+        <tr>
+            <th>1</th>
+            <th>MAX</th>
+            <th>1000</th>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>TAX</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>JACK</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>TOM</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>LIO</td>
+            <td>1000</td>
+        </tr>
+    </table>
+    <table id="dollar" style="display: none;">
+            <tr>
+                <td>1</td>
+                <td>MAX</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>TAX</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>JACK</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>TOM</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>LIO</td>
+                <td>1000</td>
+            </tr>
+            </table>
+            <table id="euro" style="display: none;">
+                
+                <tr>
+                    <td>1</td>
+                    <td>MAX</td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>TAX</td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>JACK</td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>TOM</td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>LIO</td>
+                    <td>1000</td>
+                </tr>
+                </table>
+    <script >
+                    
+        function INDIAN(){
+            document.getElementById("inr").style.display="block"
+        }
+        function AMERICAN(){
+            document.getElementById("dollar").style.display="block"
+        }
+        function RUSSIAN(){
+            document.getElementById("euro").style.display="block"
+        }
+
+    </script>
+                
+</body>
+</html>

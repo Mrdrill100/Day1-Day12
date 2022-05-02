@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="display">
+    </h2>
+    <script>
+        function dispalyer(value){
+            document.getElementById("display").innerHTML=value;
+
+        }
+        const mypromise=new Promise(function(myResolve,MyReject){
+            let request1= new XMLHttpRequest();
+            request1.open('GET',"ajaxa.txt");
+            request1.onload=function(){
+                if (request1.status==200){
+                    myResolve(this.responseText);
+
+                }else{
+                    MyReject("Error:"+request1.staus);
+                }
+                
+            };
+            request1.send();
+        });
+        mypromise.then(
+            function(value){dispalyer(value);},
+            function(error){dispalyer(error);}
+        )
+    </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+document.getElementById("hello").outerHTML="alert('Hello world')";
+document.getElementById("hello1").outerHTML="alert('warning')";
+document.getElementById("hello2").outerHTML="alert('Danger')";
+const days=365.25;
+const daysinyear=7;
+const yearinlifetime=80;
+document.getElementById("humanlifetime").outerHTML="2.  " +daysinyear*days*yearinlifetime+" days "; 
+var greeting= "hello";
+var name1 = "world";
+var revese=" hello world"
+document.getElementById("alert").outerHTML= "3.  "+greeting.concat(" "+name1);
+document.getElementById("alert1").outerHTML= "4.  "+((revese.split("")).reverse()).join("");

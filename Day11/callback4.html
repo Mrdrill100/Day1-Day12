@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="display">
+    </h2>
+    <script>
+        function dispalyer(value){
+            document.getElementById("display").innerHTML=value;
+
+        } 
+        function getfile(mycallback){
+            let request1= new XMLHttpRequest();
+            request1.open('GET',"ajax.txt",true);
+            request1.onload=function(){
+                if (request1.status==200){
+                    mycallback(this.responseText);
+
+                }else{
+                    mycallback("Error:"+request1.staus);
+                }
+                
+            }
+            request1.send();
+        }
+        getfile(dispalyer);
+    </script>
+</body>
+</html>
